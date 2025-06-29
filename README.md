@@ -22,9 +22,9 @@ git clone git@github.com:AKrugRu/workspace.git
 
 cd workspace
 
-sudo chmod +x ./create-ln.sh
+sudo chmod +x ./create-ln-dotfiles.sh
 
-./create-ln.sh
+./create-ln-dotfiles.sh
 ```
 
 # Обновление
@@ -33,5 +33,5 @@ sudo chmod +x ./create-ln.sh
 git pull
 
 # Если появилась новая ранее не настроенная программа
-./create-ln.sh
+./create-ln-dotfiles.sh
 ```
