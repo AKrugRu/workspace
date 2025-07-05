@@ -32,19 +32,42 @@ sudo apt install alacritty
 
 ```bash
 git clone git@github.com:AKrugRu/workspace.git
-
-cd workspace
-
-sudo chmod +x ./create-ln-dotfiles.sh
-
-./create-ln-dotfiles.sh
 ```
+
 
 # Обновление
 
 ```bash
 git pull
-
-# Если появилась новая ранее не настроенная программа
-./create-ln-dotfiles.sh
 ```
+
+
+Забираем необходимые конфиги раскладываем по местам:
+
+# alacritty
+
+```bash
+## windows
+%APPDATA%
+Roaming\alacritty\alacritty.toml
+## Linux/Mac os
+~/.config/alacritty.toml
+```
+
+# tmux
+
+```bash
+# tmux
+## Linux
+~/.tmux.conf
+```
+
+# zsh
+
+```bash
+# zsh
+## Linux
+~/.zshrc
+~/.p10k.zsh
+```
+

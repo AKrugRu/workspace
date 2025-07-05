@@ -4,9 +4,13 @@ TERM = "xterm-256color"
 [terminal.shell]
 program = "/bin/zsh"
 
+
 [font.normal]
 family = "JetBrains Mono"
 style = "Regular"
+
+[selection]
+save_to_clipboard = true
 
 [[mouse.bindings]]
 mouse = "Left"

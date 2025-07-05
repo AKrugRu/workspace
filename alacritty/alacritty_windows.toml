@@ -1,0 +1,21 @@
+[env]
+TERM = "xterm-256color"
+
+[terminal.shell]
+program = "wsl"
+args = ["-d", "Ubuntu", "--cd", "~"]
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[selection]
+save_to_clipboard = true
+
+[[mouse.bindings]]
+mouse = "Left"
+action = "Copy"
+
+[[mouse.bindings]]
+mouse = "Right"
+action = "Paste"
