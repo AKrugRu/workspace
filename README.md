@@ -9,8 +9,7 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Тема powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
-  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 - Устанавливаем tmux
@@ -44,30 +43,30 @@ git pull
 
 Забираем необходимые конфиги раскладываем по местам:
 
-# alacritty
+## alacritty
 
 ```bash
 ## windows
-%APPDATA%
-Roaming\alacritty\alacritty.toml
+%APPDATA%\alacritty\alacritty.toml
+
 ## Linux/Mac os
-~/.config/alacritty.toml
+mkdir -p ~/.config/alacritty
+cp alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
 
-# tmux
+## tmux
 
 ```bash
 # tmux
 ## Linux
-~/.tmux.conf
+cp tmux/.tmux.conf ~/
 ```
 
-# zsh
+## zsh
 
 ```bash
 # zsh
 ## Linux
-~/.zshrc
-~/.p10k.zsh
+cp zsh/.p10k.zsh ~/
+cp zsh/.zshrc ~/
 ```
-
